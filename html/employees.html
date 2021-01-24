@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Slurp Inc.</title>
+        <link href="../styles/employees.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <header class="head1">
+        <div id="title">
+            <h1>Slurp Inc.</h1>
+        </div>
+    </header>
+   <!--<input type="checkbox" id="check">--> 
+
+   <div class="bars" onclick="clickBars(this, 'side-nav')">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+   </div> 
+
+    <nav class="side-nav">
+        <ul>
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a  href="about.html">About</a></li>
+            <li class="nav-item"><a class="active" href="#">Employees</a></li>
+        </ul>
+    </nav>
+
+    <div class="up-nav">
+        <nav>
+           <!---- <div class="employees">employees</div>-->
+            <ul>
+                <button class="tablink" onclick="openPage('owners', this)" id="defaultOpen">Owner</button>
+                <button class="tablink" onclick="openPage('members', this)" >Members</button>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="owners" class="tabcontent">
+        <h3>owners</h3>
+        <ul>
+            <li><a class="fab fa-github fa-3x" id="github" href="https://github.com/Shlurp" target="_blank"></a></li>
+            <li><a class="fab fa-github fa-3x" id="github" href="https://github.com/Mr-Klurp" target="_blank"></a></li>
+        </ul>
+    </div>
+
+    <div id="members" class="tabcontent">
+        <h3>members</h3>
+    </div>
+
+    <body>
+        <main>
+
+        </main>
+    </body>
+
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
+    <script src="../JS/main.js"></script>
+</html>

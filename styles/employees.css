@@ -1,0 +1,55 @@
+@import url('style.css');
+
+/*.up-nav {
+    position: relative;
+    margin-right: 0;
+    display: inline;
+}*/
+
+/* Style tab links */
+.tablink {
+    position: relative;
+    top: 50px;
+    left: 1100px;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 0;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+  
+.tablink:hover {
+    background-color: #777;
+}
+  
+  /* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    position: fixed;
+    width: calc(50%);
+    margin-left: 0;
+    top: 230px;
+    left: 1100px;
+    background-color: rgb(240, 22, 240);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.tabcontent h3 {
+    position: absolute;
+    top: 1px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.tabcontent .name {
+    list-style-image: none;
+    position: relative;
+    left: 10px;
+    font-size: 30px;
+}
