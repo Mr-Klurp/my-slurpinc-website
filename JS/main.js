@@ -1,8 +1,19 @@
 function clickBars(x) {
-    x.classList.toggle("change-bar");
-    document.querySelector('.side-nav').classList.toggle("change-side-nav");
-    document.querySelector('.des').classList.toggle("change-des");
+  x.classList.toggle("change-bar");
+  document.querySelector('.side-nav').classList.toggle("change-side-nav");
+
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+
+  if (page == "index.html") {
+    document.querySelector('.main-tag').classList.toggle("change-main-tag");
     document.querySelector('.widget').classList.toggle("change-widget");
+  }
+  else if (page == "employees.html") {
+    document.querySelector('.tablink').classList.toggle("change-tablink");
+    document.querySelector('.tabcontent').classList.toggle("change-tabcontent");
+    document.querySelector('.tablink-1').classList.toggle
+  }
 }
 
 function openPage(pageName, elmnt) {
@@ -12,19 +23,8 @@ function openPage(pageName, elmnt) {
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
+    document.getElementById(pageName).style.display = "block";  
+}
   
-    // Remove the background color of all tablinks/buttons
-   // tablinks = document.getElementsByClassName("tablink");
-    //for (i = 0; i < tablinks.length; i++) {
-      //tablinks[i].style.backgroundColor = "";
-   // }
-  
-    // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
-  
-    // Add the specific color to the button used to open the tab content
-   // elmnt.style.backgroundColor = color;
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+// Get the element with tablink owners and click on it
+document.getElementsByClassName("tablink-1").click();

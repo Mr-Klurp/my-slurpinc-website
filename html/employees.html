@@ -32,24 +32,28 @@
         <nav>
            <!---- <div class="employees">employees</div>-->
             <ul>
-                <button class="tablink" onclick="openPage('owners', this)" id="defaultOpen">Owner</button>
-                <button class="tablink" onclick="openPage('members', this)" >Members</button>
+                <button class="tablink" class="tablink-1" onclick="openPage('owners', this)" id="defaultOpen">owners</button>
+                <button class="tablink" class="tablink-2" onclick="openPage('devs', this)" >developers</button>
             </ul>
         </nav>
     </div>
 
-    <div id="owners" class="tabcontent">
-        <h3>owners</h3>
-        <ul>
-            <li><a class="fab fa-github fa-3x" id="github" href="https://github.com/Shlurp" target="_blank"></a></li>
-            <li><a class="fab fa-github fa-3x" id="github" href="https://github.com/Mr-Klurp" target="_blank"></a></li>
-        </ul>
-    </div>
+    <div class="tabs">
+        <div id="owners" class="tabcontent">
+            <ul>
+                <li><a id="github" href="https://github.com/Shlurp" target="_blank">Slurp</a></li>
+                <li><a id="github" href="https://github.com/Mr-Klurp" target="_blank">Klurp</a></li>
+            </ul>
+        </div>
 
-    <div id="members" class="tabcontent">
-        <h3>members</h3>
+        <div id="devs" class="tabcontent">
+            <ul>
+                <li><a id="github" href="https://github.com/Karunika" target="_blank">Biscuit</a></li>
+                <li><a id="github" href="https://github.com/rickastley1" target="_blank">Astley</a></li>
+                <li><a id="github" href="https://github.com/Sid200" target="_blank">Sid</a></li>
+            </ul>
+        </div>
     </div>
-
     <body>
         <main>
 

@@ -77,7 +77,7 @@ header {
     text-decoration: none;
 }
 
-.side-nav ul li a:active {
+.side-nav ul li a:active:not(.active) {
     color: #555;
 }
 
@@ -101,21 +101,28 @@ header {
 
 body {
    /* background-color: deeppink;*/
-   background-color: rgb(206, 129, 170);
+   /*background-color: rgb(206, 129, 170);*/
+   /*background-color: rgb(231, 155, 238);*/
+    background-color: rgb(159, 104, 190);
 }
 
-.des {
+.main-tag {
     position: fixed;
     top: 170px;
     left: 100px;
     transition: all 0.6s ease;
 }
 
-.des p {
+
+.main-tag h2 {
     font-size: 50px;
 }
 
-.change-des {
+.main-tag p {
+    font-size: 25px;
+}
+
+.change-main-tag {
     left: 320px;
 }
 
@@ -136,8 +143,7 @@ body {
 }
 
 .join-button:hover {
-    background-color: rgb(170, 56, 127);
-    
+    background-color: rgb(170, 56, 127);   
 }
 
 .join-button:active {
@@ -146,6 +152,7 @@ body {
 
 .widget {
     position: fixed;
+    size: 20px;
     width: 60%;
     height: 500px;
     top:350px;
