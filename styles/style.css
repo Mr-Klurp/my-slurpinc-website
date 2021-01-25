@@ -153,7 +153,7 @@ body {
 .widget {
     position: fixed;
     size: 20px;
-    width: 60%;
+    /*width: ;*/
     height: 500px;
     top:350px;
     left: 100px;
@@ -162,4 +162,30 @@ body {
 
 .change-widget {
     left: 320px;
+}
+
+.footer {
+    position: fixed;
+    width: 2304px;
+    height: 150px;
+    bottom: 0;
+    display: block;
+    overflow: hidden;
+   /* padding: 30px 0;*/
+    box-sizing: border-box;
+    background-color: #64646d;
+}
+
+.inner-footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100px;
+}
+
+.inner-footer .logo-container {
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    left: -600px;
 }
