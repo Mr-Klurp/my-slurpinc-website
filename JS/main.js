@@ -34,6 +34,9 @@ function openPage(pageName, elmnt) {
 // Get the element with tablink owners and click on it
 var path = window.location.pathname;
 var page = path.split("/").pop();
+console.log(page);
+
+
 if (page == "employees.html") {
   document.getElementById("tablink-1-id").click();
 } 
