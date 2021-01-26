@@ -1,45 +1,63 @@
 @import url('style.css');
 
-/*.up-nav {
-    position: relative;
-    margin-right: 0;
-    display: inline;
-}*/
+.tabs {
+    position: fixed;
+    top: 170px;
+    left: 100px;
+    transition: all 0.6s ease;
+}
+
+.tab-links li {
+    list-style-type: none;
+    /*display: inline-flex;*/
+    display: inline-flex;
+}
 
 /* Style tab links */
-.tablink {
-    position: relative;
-    top: 50px;
-    left: 1000px;
+.tab-links li button {
     background-color: #555;
     color: rgb(0, 0, 0);
-    float: left;
+    
+    width: 576px;
     border: none;
     outline: none;
     cursor: pointer;
-    margin-left: 0;
-    padding: 14px 16px;
+    
+    /*padding: 14px 0 0 14px;*/
+    padding-top: 14px;
+    padding-bottom: 14px;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    width: 576px;
-    transition: all 0.6s ease;
+    
+    transition: all 0.3s ease;
 }
-/*
-.change-tablink {
-    left: 300px;
+
+.tablink-1 {
+    border-top-left-radius: 30px;
 }
-*/
-.tablink:hover {
+
+.tablink-2 {
+    border-top-right-radius: 30px;
+}
+
+/* Moving the tabs */
+.change-tabs {
+    left: 320px;
+}
+
+.tabs-nav button:hover {
     background-color: #777;
 }
   
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-    position: fixed;
+    border: 3px solid rgb(0, 0, 0);
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     width: 1152px;
     margin-left: 0;
-    top: 230px;
     left: 1000px;
     background-color: rgb(240, 22, 240);
     display: none;
@@ -56,9 +74,9 @@
 }
 
 .tabcontent li {
+    position: relative;
     list-style-image: url('../img/GitHub-Mark-32px.png');
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: relative;
     left: 30px;
     font-size: 40px;
     margin-top: 1rem;
@@ -68,14 +86,8 @@
     text-decoration: none;
     font-weight: bold;
     color: black;
-    /*font-size: 30px;*/
 }
 
 .tabcontent a:active {
     color: rgb(240, 22, 240);
 }
-/*
-.change-tabcontent {
-    left: 300px;
-}
-*/

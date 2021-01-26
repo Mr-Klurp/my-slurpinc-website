@@ -23,37 +23,40 @@
     <nav class="side-nav">
         <ul>
             <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item"><a  href="about.html">About</a></li>
+            <li class="nav-item"><a  href="#">About</a></li>
             <li class="nav-item"><a class="active" href="#">Employees</a></li>
         </ul>
     </nav>
 
-    <div class="up-nav">
-        <nav>
+    <div class="tabs">
+        <nav class="tabs-nav">
            <!---- <div class="employees">employees</div>-->
-            <ul>
-                <button class="tablink" class="tablink-1" onclick="openPage('owners', this)" id="defaultOpen">owners</button>
-                <button class="tablink" class="tablink-2" onclick="openPage('devs', this)" >developers</button>
+            <ul class="tab-links">
+                <li>
+                    <button class="tablink" class="tablink-1" id="tablink-1-id" onclick="openPage('owners', this)" id="defaultOpen">owners</button></li><li>
+                        <button class="tablink" class="tablink-2" onclick="openPage('devs', this)" >developers</button></li>
             </ul>
         </nav>
-    </div>
+    
 
-    <div class="tabs">
-        <div id="owners" class="tabcontent">
-            <ul>
-                <li><a id="github" href="https://github.com/Shlurp" target="_blank">Slurp</a></li>
-                <li><a id="github" href="https://github.com/Mr-Klurp" target="_blank">Klurp</a></li>
-            </ul>
-        </div>
+        <div class="tab-body">
+            <div id="owners" class="tabcontent">
+                <ul>
+                    <li><a id="github" href="https://github.com/Shlurp" target="_blank">Slurp</a></li>
+                    <li><a id="github" href="https://github.com/Mr-Klurp" target="_blank">Klurp</a></li>
+                </ul>
+            </div>
 
-        <div id="devs" class="tabcontent">
-            <ul>
-                <li><a id="github" href="https://github.com/Karunika" target="_blank">Biscuit</a></li>
-                <li><a id="github" href="https://github.com/rickastley1" target="_blank">Astley</a></li>
-                <li><a id="github" href="https://github.com/Sid200" target="_blank">Sid</a></li>
-            </ul>
+            <div id="devs" class="tabcontent">
+                <ul>
+                    <li><a id="github" href="https://github.com/Karunika" target="_blank">Biscuit</a></li>
+                    <li><a id="github" href="https://github.com/rickastley1" target="_blank">Astley</a></li>
+                    <li><a id="github" href="https://github.com/Sid200" target="_blank">Sid</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    
     <body>
         <main>
 

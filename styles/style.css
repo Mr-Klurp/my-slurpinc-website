@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
     background-color: rgb(70, 68, 68);
-    width: 2304px;
+    width: 100vw;
 }
 
 #title h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
     font-size: 52px;
     padding: 25px;
 }
@@ -113,14 +115,15 @@ body {
     transition: all 0.6s ease;
 }
 
+.main-tag .par {
+    font-size: 30px;
+}
 
-.main-tag h2 {
+.main-tag .par h2 {
     font-size: 50px;
 }
 
-.main-tag p {
-    font-size: 25px;
-}
+
 
 .change-main-tag {
     left: 320px;
@@ -133,12 +136,12 @@ body {
     color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
+    
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
-    margin: 30px 20px;
+    margin: 30px 0;
     cursor: pointer;
 }
 
@@ -151,12 +154,13 @@ body {
 }
 
 .widget {
-    position: fixed;
-    size: 20px;
-    /*width: ;*/
+    
+   /* size: 20px;*/
+    width: 500px;
     height: 500px;
-    top:350px;
-    left: 100px;
+    /*top:350px;*/
+    left: 50px;
+    margin-top: 0px;
     transition: all 0.6s ease;
 }
 
@@ -166,7 +170,7 @@ body {
 
 .footer {
     position: fixed;
-    width: 2304px;
+    width: 100vw;
     height: 150px;
     bottom: 0;
     display: block;
@@ -178,7 +182,7 @@ body {
 
 .inner-footer {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     width: 1100px;
     height: 100px;
 }
@@ -187,5 +191,9 @@ body {
     padding: 15px 0;
     position: relative;
     display: block;
-    left: -600px;
+    left: 10px;
+}
+
+.inner-footer .logo-container img {
+    border-radius: 50%;
 }
